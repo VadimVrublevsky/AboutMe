@@ -3,10 +3,284 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <title>About Me</title>
 </head>
 <body>
-    <h1>hello world!</h1>
+  <!--sprite-->
+  <svg style="display: none;">
+    <symbol version="1.0" id="burger-menu__m"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    x="0px" y="0px" width="49.945px" height="24.007px"
+    viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
+      <g id="miu">
+        <g id="editor_list_view_hambuger_menu_glyph">
+          <g>
+            <path id="path-1" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"></path>
+          </g>
+          <g>
+            <path id="path-1_1_" d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"></path>
+          </g>
+        </g>
+      </g>
+    </symbol>
+
+    <symbol version="1.0" id="cross-menu__m"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    x="0px" y="0px" width="23.867px" height="23.867px"
+    viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
+      <path d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
+    </symbol>
+
+    <symbol version="1.0" id="twitter-icon"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    x="0px" y="0px"
+    width="17.5px" height="14.663px"
+    viewBox="0 0 17.5 14.663"
+    enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+      <g>
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.485,3.074,0.263,3.685,1.151 c0.694-0.226,1.372-0.47,2.072-0.691c-0.004,0.841-0.538,1.478-0.883,1.727C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.976-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.32,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.654,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.787,11.283,0.153z"/>
+      </g>
+    </symbol>
+
+    <symbol version="1.0" id="facebook-icon"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    x="0px" y="0px" width="8.673px" height="18.944px"
+    viewBox="0 0 8.673 18.944"
+    enable-background="new 0 0 8.673 18.944" xml:space="preserve">
+      <path d="M6.275,3.357c0.799,0,1.599,0,2.398,0c0-1.119,0-2.238,0-3.357c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.115 H0v3.517h1.958c0,3.104,0,6.208,0,9.312c1.279,0,2.558,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.115H5.786 C5.765,5.07,5.75,3.709,6.275,3.357z"/>
+    </symbol>
+
+    <symbol version="1.0" id="youtube-icon"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    x="0px" y="0px" width="14.64px" height="13.96px"
+    viewBox="0 0 14.64 13.96"
+    enable-background="new 0 0 14.64 13.96" xml:space="preserve">
+      <path d="M1.775,13.78C0.799,14.257,0,13.758,0,12.671V1.29c0-1.088,0.799-1.585,1.775-1.109l12.133,5.932 c0.975,0.478,0.975,1.258,0,1.736L1.775,13.78z"/>
+    </symbol>
+
+  </svg>
+  <!--header-->
+  <header class="page-header">
+    <div class="page-header__container container">
+      <span class="page-header__logo">
+        Vadim Vrublevsky
+      </span>
+      <button class="btn page-header__button">
+        <svg class="page-header__toggle-image" width="40" height="24">
+          <use xlink:href="#burger-menu__m"></use>
+        </svg>
+      </button>
+
+      <nav class="page-header__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">
+                about
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">
+                skills
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">
+                experience
+            </a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#">
+                contacts
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <!--main-->
+  <main class="page-main">
+    <h1 class="page-main__title visually-hidden">About me</h1>
+    <!--section-about-->
+    <section class="about section">
+      <div class="about__container container">
+        <h2 class="about__title">
+          <span class="letter-color">A</span>bout
+        </h2>
+        <img class="about__image" src="img/rast/me.jpg" width="300" height="120" alt="it's me">
+        <div class="about__information">
+          <h3 class="about__subtitle">
+            Hello, I'am Vadim.
+          </h3>
+          <p class="about__description">
+            I'am 29 and I want to become a frontend developer. A year ago I decided
+            to completely change my life and began studying the frontend.
+          </p>
+          <p class="about__contacts">
+            <table class="about__table">
+              <tr>
+                <td class="about__text">
+                  City
+                </td>
+                <td class="about__text">
+                  Saint-Petersburg
+                </td>
+              </tr>
+              <tr>
+                <td class="about__text">
+                  Email
+                </td>
+                <td class="about__text">
+                  v.v.vrublevsky@gmail.com
+                </td>
+              </tr>
+              <tr>
+                <td class="about__text">
+                  Social
+                </td>
+                <td class="about__text">
+                  <ul class="about__social-list social">
+                    <li class="social__item">
+                      <a class="social__link" href="#">
+                        <svg class="social__image" width="15" height="14">
+                          <use xlink:href="#youtube-icon"></use>
+                        </svg>
+                      </a>
+                    </li>
+                    <li class="social__item">
+                      <a class="social__link" href="#">
+                        <svg class="social__image" width="9" height="19">
+                          <use xlink:href="#facebook-icon"></use>
+                        </svg>
+                      </a>
+                    </li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </p>
+          <button class="btn about__button-contact">Contact me!</button>
+        </div>
+      </div>
+    </section>
+    <!--section-skills-->
+    <section class="skills section">
+      <div class="skills__container container">
+        <div class="skills__block">
+          <h2 class="skills__title">
+            <span class="letter-color">S</span>kills
+          </h2>
+          <p class="skills__text">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Magni, corrupti, dicta, debitis vero est nam nemo eius quia
+            consequatur officiis maiores. Dolor ipsam exercitationem explicabo dolorem
+            quae doloribus consectetur, iusto odio aliquam excepturi architecto accusantium laboriosam.
+            Tempore et laborum suscipit?
+          </p>
+        </div>
+        <div class="skills__block">
+          <div class="skills__description">
+            <h3 class="skills__subtitle">HTML</h3>
+            <p class="skills__names">
+              semantics, accessobility, positioning, page layout, BEM
+            </p>
+          </div>
+          <div class="skills__description">
+            <h3 class="skills__subtitle">CSS</h3>
+            <p class="skills__names">
+              flexbox, grid, sass, bootstrap, adaptive, response, svg, cross-browser compatibility
+            </p>
+          </div>
+          <div class="skills__description">
+            <h3 class="skills__subtitle">JS</h3>
+            <p class="skills__names">
+              es5, es6, DOM, JSON, XMLHttpRequest, FetchAPI, data structures, prototypes
+            </p>
+          </div>
+          <div class="skills__description">
+            <h3 class="skills__subtitle">Libraries</h3>
+            <p class="skills__names">
+              react
+            </p>
+          </div>
+          <div class="skills__description">
+            <h3 class="skills__subtitle">Other</h3>
+            <p class="skills__names">
+              npm, gulp, webpack, babel, git, linters, google :)
+            </p>
+          </div>
+          <div class="skills__description">
+            <h3 class="skills__subtitle">Soft skills</h3>
+            <p class="skills__names">
+              sociability, teamwork, responsibility, attentiveness, curiosity, perfectionism
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    <!--section-experience-->
+    <section>
+      <div class="experience__container container">
+        <h2 class="experience__title">
+          <span class="letter-color">E</span>xperience
+        </h2>
+        <p class="experience__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          Fugit eum cumque odit inventore temporibus ut fugiat omnis minima placeat perferendis!
+        </p>
+      </div>
+    </section>
+    <!--section-contacts-->
+    <section>
+        <div class="contacts__container container">
+          <div class="contacts__block">
+            <h2 class="contacts__title">
+              <span class="letter-color">C</span>ontacts
+            </h2>
+            <p class="contacts__text">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim fuga explicabo unde,
+              necessitatibus amet non aliquam similique dolore vero autem ratione blanditiis eos
+              doloremque expedita maxime ut ad? Consectetur, animi.
+            </p>
+          </div>
+          <div class="contacts__block">
+            <form class="contacts__form form" method="post" action="#" name="Contact with me">
+              <input class="form__text" type="text" id="name" placeholder="Name">
+              <input class="form__text" type="email" id="email" placeholder="Email">
+              <textarea class="form__textarea" placeholder="What you want?"></textarea>
+              <button class="btn form__submit" type="submit">Contact</button>
+            </form>
+          </div>
+        </div>
+    </section>
+  </main>
+  <!--footer-->
+  <footer class="page-footer">
+    <div class="page-footer__container container">
+      <p>Copyright 2019 Vadim</p>
+      <p>All rights reserved</p>
+    </div>
+  </footer>
+  <!--modal-popup-->
+  <div class="modal-popup">
+    <button class="btn modal-popup__close">
+      <svg class="modal-popup__toggle-image" width="24" height="24">
+        <use xlink:href="#cross-menu__m"></use>
+      </svg>
+    </button>
+    <form class="contacts__form form" method="post" action="#" name="Contact with me">
+      <input class="form__text" type="text" id="name" placeholder="Name">
+      <input class="form__text" type="email" id="email" placeholder="Email">
+      <textarea class="form__textarea" placeholder="What you want?"></textarea>
+      <button class="btn form__submit" type="submit">Contact</button>
+    </form>
+  </div>
 </body>
 </html>

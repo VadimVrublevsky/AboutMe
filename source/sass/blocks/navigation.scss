@@ -1,0 +1,25 @@
+// Mobile
+.navigation {
+
+}
+.navigation__list {
+
+}
+.navigation__item {
+  padding: 10px;
+  text-align: center;
+}
+.navigation__link {
+  color: black;
+  text-transform: uppercase;
+  font-family: $Lato, sans-serif;
+  &:hover,
+  &:focus {
+    color: rgb(55, 230, 55);
+    border-bottom: 1px solid rgb(55, 230, 55);
+  }
+  &:active {
+    color: green;
+    border-bottom: 1px solid green;
+  }
+}

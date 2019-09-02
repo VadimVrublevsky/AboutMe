@@ -1,0 +1,41 @@
+// Mobile
+.skills {
+
+}
+.skills__container {
+
+}
+.skills__block {
+
+}
+.skills__title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.skills__text {
+  margin-bottom: 10px;
+  font-family: $OswaldR, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+.skills__description {
+  padding-bottom: 10px;
+  padding-top: 10px;
+  font-family: $OswaldR, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  border-bottom: 1px solid rgb(55, 230, 55);
+  &:last-child {
+    border-bottom: none;
+  }
+}
+.skills__subtitle {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: $OswaldM, sans-serif;
+  font-size: 18px;
+  line-height: 16px;
+}
+.skills__names {
+
+}

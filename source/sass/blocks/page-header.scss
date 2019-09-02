@@ -1,0 +1,32 @@
+// Mobile
+.page-header {
+  width: 100%;
+  border-bottom: 1px solid rgb(55, 230, 55);
+}
+.page-header__container {
+
+}
+.page-header__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  padding-bottom: 15px;
+}
+.page-header__logo {
+  font-family: $OswaldM;
+  font-size: 20px;
+  line-height: 24px;
+}
+.page-header__button {
+  &:hover,
+  &:focus {
+    fill: rgb(55, 230, 55);
+  }
+  &:active {
+    fill: green;
+  }
+}
+.page-header__navigation {
+  display: none;
+}

@@ -1,0 +1,66 @@
+// Mobile
+.about {
+
+}
+.about-container {
+
+}
+.about__title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: $OswaldM, sans-serif;
+  font-size: 28px;
+  line-height: 32px;
+}
+.about__image {
+  width: 100%;
+  border-radius: 3px;
+}
+.about__information {
+
+}
+.about__subtitle {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-family: $OswaldM, sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+}
+.about__description {
+  font-family: $OswaldR, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+}
+.about__contacts {
+  margin-top: 5px;
+}
+.about__table {
+  border-collapse: collapse;
+}
+.about__text {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 10px;
+  font-family: $OswaldR, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: left;
+}
+.about__social-list {
+
+}
+.about__button-contact {
+  width: 100px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(55, 230, 55);
+  &:hover,
+  &:focus {
+    background-color: rgb(55, 230, 55);
+  }
+  &:active {
+    background-color: green;
+    border: 1px solid green;
+  }
+}

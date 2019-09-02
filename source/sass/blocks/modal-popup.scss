@@ -1,0 +1,32 @@
+// Mobile
+.modal-popup {
+  width: 87.5%;
+  margin-left: auto;
+  margin-right: auto;
+  // display: none;
+  padding: 10px;
+  border: 1px solid grey;
+  border-radius: 3px;
+}
+.modal-popup__flex-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.modal-popup__description {
+  font-family: $OswaldM, sans-serif;
+  font-size: 28px;
+  line-height: 32px;
+}
+.modal-popup__close {
+  &:hover,
+  &:focus {
+    fill: rgb(55, 230, 55);
+  }
+  &:active {
+    fill: green;
+  }
+}
+.modal-popup__toggle-image {
+
+}

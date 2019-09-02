@@ -1,0 +1,21 @@
+// Mobile
+.social {
+  display: flex;
+  align-items: center;
+}
+.social__item {
+  padding-right: 15px;
+}
+.social__link {
+
+}
+.social__image {
+  fill: black;
+  &:hover,
+  &:focus {
+    fill: rgb(55, 230, 55);
+  }
+  &:active {
+    fill: green;
+  }
+}

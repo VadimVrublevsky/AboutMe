@@ -1,0 +1,54 @@
+// Mobile
+.form {
+
+}
+.form__text {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: $OswaldR, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  border: 1px solid grey;
+  border-radius: 3px;
+  &:focus {
+    border-color: rgb(55, 230, 55);
+    outline-color: rgb(55, 230, 55);
+  }
+  &:first-child {
+    margin-top: 0;
+  }
+}
+.form__textarea {
+  margin-top: 10px;
+  height: 120px;
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: $OswaldR, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  resize: none;
+  border: 1px solid grey;
+  border-radius: 3px;
+  &:focus {
+    border-color: rgb(55, 230, 55);
+    outline-color: rgb(55, 230, 55);
+  }
+}
+.form__submit {
+  width: 100px;
+  height: 40px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(55, 230, 55);
+  &:hover,
+  &:focus {
+    background-color: rgb(55, 230, 55);
+  }
+  &:active {
+    background-color: green;
+    border: 1px solid green;
+  }
+}

@@ -1,7 +1,4 @@
 // Mobile
-.form {
-
-}
 .form__text {
   width: 100%;
   margin-top: 10px;
@@ -42,6 +39,7 @@
   height: 40px;
   margin-top: 10px;
   border-radius: 5px;
+  color: black;
   border: 1px solid rgb(55, 230, 55);
   &:hover,
   &:focus {
@@ -50,5 +48,28 @@
   &:active {
     background-color: green;
     border: 1px solid green;
+  }
+}
+
+// Desktop
+@media (min-width: $desktop-width) {
+  .form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .form__block {
+    margin-top: 20px;
+    width: 48%;
+  }
+  .form__text {
+    margin-top: 32px;
+  }
+  .form__textarea {
+    margin-top: 0;
+  }
+  .form__submit {
+    margin-left: auto;
+    margin-top: 32px;
   }
 }

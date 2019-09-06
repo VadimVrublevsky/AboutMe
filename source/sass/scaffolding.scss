@@ -16,12 +16,21 @@
   font-weight: normal;
   font-style: normal;
 }
+// Mobile
 body {
   min-width: 320px;
+  max-width: 1440px;
   margin: 0;
   padding: 0;
   margin-left: auto;
   margin-right: auto;
   color: black;
   font-family: $OswaldR;
+}
+
+// Tablet
+@media (min-width: $tablet-width) {
+  body {
+    min-width: 768px;
+  }
 }

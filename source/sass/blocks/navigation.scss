@@ -1,10 +1,4 @@
 // Mobile
-.navigation {
-
-}
-.navigation__list {
-
-}
 .navigation__item {
   padding: 10px;
   text-align: center;
@@ -21,5 +15,33 @@
   &:active {
     color: green;
     border-bottom: 1px solid green;
+  }
+}
+
+// JS
+.navigation--opened {
+  display: block;
+}
+.navigation--closed {
+  display: none;
+}
+.navigation--nojs {
+  display: block;
+}
+
+// Tablet
+@media (min-width: $tablet-width) {
+  .navigation {
+    display: block;
+  }
+  .navigation__list {
+    display: flex;
+  }
+}
+
+// Desktop
+@media (min-width: $desktop-width) {
+  .navigation__item {
+    font-size: 18px;
   }
 }

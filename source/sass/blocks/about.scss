@@ -1,10 +1,4 @@
 // Mobile
-.about {
-
-}
-.about-container {
-
-}
 .about__title {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -15,9 +9,6 @@
 .about__image {
   width: 100%;
   border-radius: 3px;
-}
-.about__information {
-
 }
 .about__subtitle {
   margin-top: 5px;
@@ -30,6 +21,7 @@
   font-family: $OswaldR, sans-serif;
   font-size: 16px;
   line-height: 22px;
+  color: rgb(85, 81, 81);
 }
 .about__contacts {
   margin-top: 5px;
@@ -45,9 +37,10 @@
   font-size: 16px;
   line-height: 22px;
   text-align: left;
-}
-.about__social-list {
-
+  color: rgb(85, 81, 81);
+  &--title {
+    color: black;
+  }
 }
 .about__button-contact {
   width: 100px;
@@ -62,5 +55,48 @@
   &:active {
     background-color: green;
     border: 1px solid green;
+  }
+}
+
+// Tablet
+@media (min-width: $tablet-width) {
+  .about__container {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-areas:
+      'a a b b b'
+      'c c b b b'
+      '. . b b b';
+    grid-gap: 10px;
+  }
+  .about__title {
+    grid-area: a;
+    position: relative;
+    padding-right: 30px;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 70px;
+      width: 22px;
+      height: 17px;
+      background-image: url("../../img/vector/icon-check.svg");
+      background-repeat: no-repeat;
+    }
+  }
+  .about__image {
+    grid-area: b;
+    margin-top: 10px;
+  }
+  .about__information {
+    grid-area: c;
+  }
+}
+
+// Desktop
+@media (min-width: $desktop-width) {
+  .about__title {
+    margin-top: 30px;
   }
 }

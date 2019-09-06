@@ -7,15 +7,28 @@
   padding-right: 15px;
 }
 .social__link {
-
+  &:hover .social__image,
+  &:focus .social__image {
+    fill: rgb(55, 230, 55);
+  }
+  &:active .social__image {
+    fill: green;
+  }
 }
 .social__image {
   fill: black;
-  &:hover,
-  &:focus {
-    fill: rgb(55, 230, 55);
+}
+
+// Tablet
+@media (min-width: $tablet-width) {
+  .social__item {
+    padding-right: 20px;
   }
-  &:active {
-    fill: green;
+}
+
+// Desktop
+@media (min-width: $desktop-width) {
+  .social__item {
+    padding-right: 25px;
   }
 }

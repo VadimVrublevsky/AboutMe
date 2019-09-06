@@ -3,9 +3,6 @@
   width: 100%;
   border-bottom: 1px solid rgb(55, 230, 55);
 }
-.page-header__container {
-
-}
 .page-header__block {
   display: flex;
   justify-content: space-between;
@@ -27,6 +24,39 @@
     fill: green;
   }
 }
-.page-header__navigation {
-  display: none;
+
+// Tablet
+@media (min-width: $tablet-width) {
+  .page-header {
+    // position: fixed;
+    // top: 0px;
+    // left: 0;
+    // background-color: white;
+  }
+  .page-header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .page-header__block {
+    margin-top: 30px;
+    padding-bottom: 30px;
+  }
+  .page-header__logo {
+    font-size: 24px;
+  }
+  .page-header__button {
+    display: none;
+  }
+}
+
+// Desktop
+@media (min-width: $desktop-width) {
+  .page-header__logo {
+    font-size: 26px;
+  }
+  .page-header__block {
+    margin-top: 35px;
+    padding-bottom: 35px;
+  }
 }

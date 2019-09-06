@@ -22,9 +22,6 @@ button {
   border: none;
   background: transparent;
   cursor: pointer;
-  &:focus {
-    outline: 2px solid rgb(55, 230, 55);
-  }
 }
 a {
   text-decoration: none;
@@ -46,10 +43,5 @@ h1,h2,h3,h4,h5,h6 {
 }
 .letter-color {
   color: rgb(55, 230, 55);
-}
-a {
-  &:focus {
-    outline: 2px solid rgb(55, 230, 55);
-  }
 }
 

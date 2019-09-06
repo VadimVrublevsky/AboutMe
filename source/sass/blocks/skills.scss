@@ -1,22 +1,17 @@
 // Mobile
-.skills {
-
-}
-.skills__container {
-
-}
-.skills__block {
-
-}
 .skills__title {
   margin-top: 10px;
   margin-bottom: 10px;
+  font-family: $OswaldM, sans-serif;
+  font-size: 28px;
+  line-height: 32px;
 }
 .skills__text {
   margin-bottom: 10px;
   font-family: $OswaldR, sans-serif;
   font-size: 16px;
   line-height: 22px;
+  color: rgb(85, 81, 81);
 }
 .skills__description {
   padding-bottom: 10px;
@@ -37,5 +32,50 @@
   line-height: 16px;
 }
 .skills__names {
-
+  color: rgb(85, 81, 81);
 }
+
+// Tablet
+@media (min-width: $tablet-width) {
+  .skills__container {
+    display: flex;
+    justify-content: space-between;
+  }
+  .skills__block {
+    &--left {
+      width: 40%;
+    }
+    &--right {
+      width: 60%;
+      margin-left: 5px;
+    }
+  }
+  .skills__title {
+    position: relative;
+    padding-right: 30px;
+    &:after {
+      content: "";
+      position: absolute;
+      top: 7px;
+      left: 70px;
+      width: 22px;
+      height: 17px;
+      background-image: url("../../img/vector/icon-check.svg");
+      background-repeat: no-repeat;
+    }
+  }
+  .skills__text {
+    padding-right: 5px;
+  }
+}
+
+// Desktop
+@media (min-width: $desktop-width) {
+  .skills__title {
+    margin-top: 30px;
+  }
+  .skills__description {
+    margin-top: 20px;
+  }
+}
+

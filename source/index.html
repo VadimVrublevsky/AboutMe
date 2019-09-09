@@ -3,58 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="I am a Junior Frontend Developer from Saint-Petersburg (Russia). My dream is to become a better developer. Every day I learn new things and I like it.">
     <link rel="stylesheet" href="css/normalize.css" type="text/css"/>
-    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <link rel="stylesheet" href="css/style.min.css" type="text/css"/>
     <title>About Me</title>
 </head>
 <body>
   <!--sprite-->
-  <svg style="display: none;">
-    <symbol id="icon-burger-menu"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 49.945 24.007" enable-background="new 0 0 49.945 24.007" xml:space="preserve">
-      <title>Burger icon</title>
-      <g>
-        <path d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"></path>
-      </g>
-      <g>
-        <path d="M1.137,0C0.51,0,0,0.428,0,1.01v1.981c0,0.558,0.494,1.01,1.139,1.01h47.671 c0.628,0,1.138-0.428,1.138-1.01V1.01c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,10.003C0.51,10.003,0,10.431,0,11.013v1.98 c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01v-1.98c0-0.558-0.494-1.01-1.138-1.01H1.137z M1.137,20.005C0.51,20.005,0,20.434,0,21.016v1.981c0,0.557,0.494,1.01,1.139,1.01h47.671c0.628,0,1.138-0.428,1.138-1.01 v-1.981c0-0.558-0.494-1.011-1.138-1.011H1.137z"></path>
-      </g>
-    </symbol>
-
-    <symbol id="icon-cross-menu"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 23.867 23.867" enable-background="new 0 0 23.867 23.867" xml:space="preserve">
-      <title>Cross icon</title>
-        <path d="M15.087,11.933l8.56-8.559c0.293-0.293,0.293-0.768,0-1.061L21.554,0.22C21.414,0.079,21.223,0,21.023,0 c-0.199,0-0.391,0.079-0.529,0.22l-8.561,8.56l-8.56-8.56c-0.282-0.282-0.78-0.282-1.061,0L0.22,2.313 c-0.293,0.293-0.293,0.768,0,1.061l8.56,8.559l-8.56,8.559c-0.293,0.293-0.293,0.768,0,1.062l2.093,2.094 c0.141,0.142,0.331,0.22,0.53,0.22c0.199,0,0.39-0.078,0.53-0.22l8.561-8.56l8.56,8.56c0.141,0.142,0.332,0.22,0.53,0.22 c0.199,0,0.39-0.078,0.53-0.22l2.093-2.094c0.293-0.294,0.293-0.769,0-1.062L15.087,11.933z"/>
-    </symbol>
-
-    <symbol id="icon-fb"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 10 19">
-      <title>Facebook icon</title>
-      <path d="M7.1 19H2v-8.8H0V5.8h1.9c-.1-2 .2-3.4 1.1-4.4C3.8.5 5 .1 6.5 0H10v4.2H7.2c-.1.2-.2.8-.2 1.6h3v4.4H7.1V19zm-4-1h2.8V9.1h2.9V6.8H5.9v-.5c0-1.4 0-2.6.7-3.1l.1-.1h2.1V1H6.5c-1.2.1-2 .4-2.6 1-.8.8-1 2.3-.8 4.2l.1.6H1.1v2.3h2V18z"/>
-    </symbol>
-
-    <symbol id="icon-vk"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
-      viewBox="0 0 22 12">
-      <title>VKontakte icon</title>
-      <path d="M17.6 12c-.3 0-.9-.1-1.5-.5-.5-.3-.9-.7-1.3-1.2-.3-.3-.9-.9-1.1-.9-.2.1-.4.7-.3 1.2 0 .1 0 .6-.3.9-.3.3-.8.4-.9.4h-1.4c-.7 0-3.2-.2-5.4-2.3C2.5 7.1.2 2.2.1 2 0 1.6-.1 1.2.2.9c.3-.3.8-.4 1-.4h3.1c.1 0 .4.1.7.3.3.2.4.5.5.6 0 0 .5 1.1 1.1 2 1 1.5 1.4 1.9 1.5 2 .1-.4.2-1.4.1-2.3 0-.4-.1-.8-.2-1-.1-.1-.3-.2-.5-.2l-.6-.5c0-.5.5-.9.9-1.1.5-.2 1.3-.3 2.3-.3h.5c.9 0 1.2.1 1.6.1 1.2.3 1.2 1.3 1.1 2.5v1.6c0 .3 0 .8.1 1 .2-.1.6-.5 1.5-1.9.6-.9 1-1.9 1.1-2.1.1-.3.4-.7 1.2-.7h3.4c.7 0 1.2.2 1.3.7.2.5.1 1.3-1.7 3.5-.3.3-.5.6-.7.9-.5.4-.9 1-.9 1.1 0 .1.5.5.9.9 1.1.9 1.9 1.7 2.2 2.3.4.6.3 1 .2 1.3-.3.7-1.2.7-1.4.8h-2.8-.1zm-3.9-3.7c.7 0 1.2.6 1.8 1.2.4.4.7.8 1.1 1 .5.3 1 .3 1 .3h2.9c.1 0 .3-.1.4-.1 0 0 0-.1-.1-.1-.3-.5-1-1.3-2-2.1-.9-.7-1.3-1.1-1.4-1.7 0-.6.4-1.1 1.2-2.1.2-.2.4-.5.7-.8 1.1-1.4 1.4-2 1.5-2.3H16.9c0 .4-.5 1.5-1.1 2.4-1.4 2.1-2 2.4-2.5 2.4-.1 0-.3 0-.4-.1-.7-.4-.7-1.4-.7-2.1v-.3-1.3c.1-1.3 0-1.3-.3-1.4-.3-.1-.5-.1-1.4-.1H10c-.5 0-1 0-1.4.1l.2.2c.4.5.4 1.5.4 1.7.1 1.3 0 2.9-.7 3.3-.1 0-.2.1-.4.1-.6 0-1.3-.7-2.5-2.5C5 2.9 4.5 1.8 4.5 1.8s0-.1-.1-.1-.2-.1-.2-.1H1.3h-.1c.4.9 2.5 5 4.8 7.2 2 1.9 4.3 2 4.7 2h1.4s.2 0 .2-.1v-.1c0-.2 0-2 1.2-2.3h.2z"/>
-    </symbol>
-
-    <symbol id="icon-github"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 24 24" >
-      <title>GitHub icon</title>
-      <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
-    </symbol>
-
-  </svg>
+  <div style="display: none;">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <!--header-->
   <header class="page-header">
     <div class="page-header__container container">
@@ -64,8 +22,11 @@
             <span class="letter-color">V</span>rublevsky
         </span>
         <button class="btn page-header__button" name="Navigation">
-          <svg class="page-header__toggle-image" width="40" height="24">
+          <svg class="page-header__toggle-image page-header__toggle-image--burger" width="40" height="24">
             <use xlink:href="#icon-burger-menu"></use>
+          </svg>
+          <svg class="page-header__toggle-image page-header__toggle-image--cross visually-hidden" width="40" height="24">
+            <use xlink:href="#icon-cross-menu"></use>
           </svg>
         </button>
       </div>
@@ -104,7 +65,10 @@
         <h2 class="about__title">
           <span class="letter-color">A</span>bout
         </h2>
-        <img class="about__image" src="img/rast/me.jpg" width="300" height="120" alt="it's me">
+        <picture class="about__picture">
+          <source type="image/webp" srcset="img/rast/me.webp">
+          <img class="about__image" src="img/rast/me.jpg" width="300" height="120" alt="it's me">
+        </picture>
         <div class="about__information">
           <h3 class="about__subtitle">
             Hello, I'am Vadim.
@@ -138,21 +102,21 @@
                 <td class="about__text">
                   <ul class="about__social-list social">
                     <li class="social__item">
-                      <a class="social__link" href="https://vk.com/id776794">
+                      <a class="social__link" href="https://vk.com/id776794" aria-label="go to page VK">
                         <svg class="social__image" width="22" height="12">
                           <use xlink:href="#icon-vk"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social__item">
-                      <a class="social__link" href="https://www.facebook.com/vadim.vrublevsky.562">
+                      <a class="social__link" href="https://www.facebook.com/vadim.vrublevsky.562" aria-label="go to page facebook">
                         <svg class="social__image" width="10" height="19">
                           <use xlink:href="#icon-fb"></use>
                         </svg>
                       </a>
                     </li>
                     <li class="social__item">
-                      <a class="social__link" href="https://github.com/VadimVrublevsky">
+                      <a class="social__link" href="https://github.com/VadimVrublevsky" aria-label="go to page github">
                         <svg class="social__image" width="24" height="24">
                           <use xlink:href="#icon-github"></use>
                         </svg>
@@ -288,10 +252,14 @@
             <form class="contacts__form form" method="post" action="#" name="Contact with me">
               <div class="form__block">
                 <input class="form__text" type="text" id="name" placeholder="Name" required>
+                <label class="visually-hidden" for="name">Name</label>
+
                 <input class="form__text" type="email" id="email" placeholder="Email" required>
+                <label class="visually-hidden" for="email">Email</label>
               </div>
               <div class="form__block">
-                <textarea class="form__textarea" placeholder="What do you want?"></textarea>
+                <textarea class="form__textarea" id="textArea" placeholder="What do you want?"></textarea>
+                <label class="visually-hidden" for="textArea">Your message</ladel>
               </div>
               <button class="btn form__submit" type="submit" name="Submit">Contact</button>
             </form>
@@ -318,13 +286,16 @@
         </svg>
       </button>
     </div>
-    <form class="form" method="post" action="#" name="Contact with me">
+    <form class="form form--popup" method="post" action="#" name="Contact with me">
       <div class="form__block">
         <input class="form__text form__text--name" type="text" id="namePopup" placeholder="Name" required>
+        <label class="visually-hidden" for="namePopup">Name</label>
         <input class="form__text form__text--email" type="email" id="emailPopup" placeholder="Email" required>
+        <label class="visually-hidden" for="emailPopup">Email</label>
       </div>
       <div class="form__block">
-        <textarea class="form__textarea" placeholder="What do you want?"></textarea>
+        <textarea class="form__textarea" id="textAreaPopup" placeholder="What do you want?"></textarea>
+        <label class="visually-hidden" for="textAreaPopup">Your message</ladel>
       </div>
       <button class="btn form__submit" type="submit" name="SubmitPopup">Contact</button>
     </form>

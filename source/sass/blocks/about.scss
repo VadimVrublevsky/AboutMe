@@ -60,6 +60,9 @@
 
 // Tablet
 @media (min-width: $tablet-width) {
+  .about {
+    // margin-top: 90px;
+  }
   .about__container {
     display: grid;
     grid-template-rows: auto;
@@ -81,12 +84,15 @@
       left: 70px;
       width: 22px;
       height: 17px;
-      background-image: url("../../img/vector/icon-check.svg");
+      background-image: url("../img/vector/icon-check.svg");
       background-repeat: no-repeat;
     }
   }
-  .about__image {
+  .about__picture {
     grid-area: b;
+  }
+  .about__image {
+
     margin-top: 10px;
   }
   .about__information {

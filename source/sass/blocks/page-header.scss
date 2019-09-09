@@ -27,12 +27,6 @@
 
 // Tablet
 @media (min-width: $tablet-width) {
-  .page-header {
-    // position: fixed;
-    // top: 0px;
-    // left: 0;
-    // background-color: white;
-  }
   .page-header__container {
     display: flex;
     justify-content: space-between;

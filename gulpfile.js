@@ -103,15 +103,23 @@ gulp.task("copy", () => {
     path.source.fonts,
     path.source.img,
     path.source.cssN,
-    path.source.js
   ], {
     base: "source"
   })
   .pipe(gulp.dest("build"));
 });
 
+gulp.task('babel', () =>
+  gulp.src('source/js/*.js')
+    .pipe(babel({
+        presets: ['env']
+    }))
+    .pipe(gulp.dest('build/js/'))
+);
+
 gulp.task("build", gulp.series(
   "clean",
+  "babel",
   "copy",
   "style",
   "sprite",

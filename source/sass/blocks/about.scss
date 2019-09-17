@@ -29,6 +29,16 @@
 .about__table {
   border-collapse: collapse;
 }
+.about__email {
+  color: rgb(85, 81, 81);
+  &:hover,
+  &:focus {
+    color: rgb(55, 230, 55);
+  }
+  &:active {
+    color: green;
+  }
+}
 .about__text {
   padding-top: 5px;
   padding-bottom: 5px;
